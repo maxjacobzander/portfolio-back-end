@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Youtube link:</strong>
+  <%= @project.youtube_link %>
+</p>
+
+<p>
+  <strong>Github front:</strong>
+  <%= @project.github_front %>
+</p>
+
+<p>
+  <strong>Github back:</strong>
+  <%= @project.github_back %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
